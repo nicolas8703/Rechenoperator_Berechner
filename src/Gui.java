@@ -103,14 +103,7 @@ public class Gui extends JFrame {
 
         operatorEingabePanel.add(zahlEingabe4);
 
-        operatorEingabePanel.add(operatorPlatzhalterPanel4);
-        operatorPlatzhalterPanel4.setLayout(new GridLayout(1, 3));
-        operatorPlatzhalterPanel4.add(operatorPlatzhalterPlatzhalterPanel41);
-        operatorPlatzhalterPanel4.add(operatorEingabePlatz4);
-        operatorEingabePlatz4.setEnabled(false);
-        operatorPlatzhalterPanel4.add(operatorPlatzhalterPlatzhalterPanel42);
 
-        operatorEingabePanel.add(zahlEingabe5);
 
         operatorEingabePanel.add(operatorPlatzhalterPanel5);
         operatorPlatzhalterPanel5.setLayout(new GridLayout(1, 3));
@@ -148,9 +141,6 @@ public class Gui extends JFrame {
                     zahlen.add(Integer.parseInt(zahlEingabe4.getText()));
                 }
 
-                if (!zahlEingabe5.getText().isEmpty()) {
-                    zahlen.add(Integer.parseInt(zahlEingabe5.getText()));
-                }
 
                 if (zahlen.size() < 2) {
                     JOptionPane.showMessageDialog(null, "Es müssen mindestens zwei Zahlen eingegeben werden!");
